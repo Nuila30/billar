@@ -245,7 +245,7 @@ export default function Home() {
     rel="noopener noreferrer"
   >
     <img
-      src="/icon/facebook.png"
+      src="/Icon/facebook.png"
       alt="Facebook"
       className="h-8 w-8 transition hover:scale-110"
     />

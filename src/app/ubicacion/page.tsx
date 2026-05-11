@@ -25,7 +25,7 @@ export default function Ubicacion() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20">
-        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="grid items-start gap-10 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="space-y-6">
             <div className="rounded-[2rem] bg-white p-8 shadow-xl">
               <p className="text-sm font-bold uppercase tracking-[0.25em] text-[#78964c]">
@@ -97,7 +97,7 @@ export default function Ubicacion() {
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-[2rem] bg-white shadow-2xl">
+          <div className="overflow-hidden rounded-[2rem] bg-white shadow-2xl lg:sticky lg:top-28">
             <div className="h-[420px] w-full">
               <iframe
                 title="Ubicación Billar El Doblete"

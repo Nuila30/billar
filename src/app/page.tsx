@@ -6,9 +6,8 @@ export default function Home() {
     <>
       <section className="relative overflow-hidden">
         <div className="relative min-h-[calc(100vh-96px)] bg-[url('/img/F_1.png')] bg-cover bg-center">
-          <div className="absolute inset-0 bg-black/65" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/55 to-black/75" />
-
+          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/5 to-black/5" />
           <div className="relative z-10 mx-auto grid min-h-[calc(100vh-96px)] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="max-w-3xl text-white">
               <p className="mb-6 text-xs font-bold uppercase tracking-[0.35em] text-[#c8d9a1]">

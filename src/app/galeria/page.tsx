@@ -6,8 +6,8 @@ export default function Galeria() {
   const images = [
     {
       src: "/img/F_4.png",
-      title: "Ambiente premium",
-      text: "Un espacio elegante para disfrutar con amigos.",
+      title: "Ambiente agradable",
+      text: "Un espacio comodo para disfrutar con amigos.",
     },
     {
       src: "/img/F_1.png",
@@ -53,7 +53,7 @@ export default function Galeria() {
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75">
             Conoce el ambiente, las mesas, los espacios sociales y la
-            experiencia premium que ofrece Billar El Doblete.
+            experiencia agradable que ofrece Billar El Doblete.
           </p>
         </div>
       </section>
@@ -168,7 +168,7 @@ export default function Galeria() {
               </h2>
 
               <p className="mt-5 leading-8 text-white/75">
-                Reserva tu mesa por WhatsApp y disfruta de un ambiente elegante,
+                Reserva tu mesa por WhatsApp y disfruta de un ambiente comodo,
                 cómodo y perfecto para compartir.
               </p>
             </div>

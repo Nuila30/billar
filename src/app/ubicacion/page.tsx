@@ -133,7 +133,7 @@ export default function Ubicacion() {
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/75">
             No solo es fácil llegar, es el lugar ideal para disfrutar con
-            amigos, competir y vivir una experiencia premium.
+            amigos, competir y vivir una experiencia.
           </p>
         </div>
       </section>

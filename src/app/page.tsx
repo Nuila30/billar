@@ -11,7 +11,7 @@ export default function Home() {
           <div className="relative z-10 mx-auto grid min-h-[calc(100vh-96px)] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="max-w-3xl text-white">
               <p className="mb-6 text-xs font-bold uppercase tracking-[0.35em] text-[#c8d9a1]">
-                Billar · Lounge · Experiencia
+                Billar  · Experiencia
               </p>
 
               <h1 className="text-5xl font-black leading-[0.95] tracking-tight md:text-7xl">
@@ -23,7 +23,7 @@ export default function Home() {
 
               <p className="mt-7 max-w-2xl text-lg font-medium leading-8 text-white/85 md:text-xl">
                 Donde el juego se vive con estilo. Disfruta mesas de billar,
-                ambiente premium, música, reservas y una experiencia ideal para
+                ambiente comodo, música, reservas y una experiencia ideal para
                 compartir con amigos.
               </p>
 
@@ -48,7 +48,7 @@ export default function Home() {
 
             <div className="rounded-[2rem] border border-white/10 bg-black/45 p-6 shadow-2xl backdrop-blur-xl md:p-8">
               <p className="text-sm font-bold uppercase tracking-[0.3em] text-[#c8d9a1]">
-                Experiencia premium
+                Experiencia
               </p>
 
               <h2 className="mt-4 text-3xl font-black text-white md:text-4xl">
@@ -59,7 +59,10 @@ export default function Home() {
                 {[
                   ["Reservas rápidas", "Atención directa por WhatsApp."],
                   ["Eventos y grupos", "Cumpleaños, convivios y torneos."],
-                  ["Ambiente elegante", "Madera, verde oscuro y estilo premium."],
+                  [
+                    "Ambiente cómodo",
+                    "Madera, verde oscuro.",
+                  ],
                 ].map(([title, text]) => (
                   <div
                     key={title}
@@ -94,8 +97,7 @@ export default function Home() {
               amigos.
             </p>
             <p className="mt-5">
-              Nuestro objetivo es ofrecer un espacio ordenado, agradable y con
-              una imagen premium, donde cada visita se sienta especial.
+              Nuestro objetivo es ofrecer un espacio ordenado, agradable, donde cada visita se sienta especial.
             </p>
           </div>
         </div>
@@ -111,24 +113,56 @@ export default function Home() {
             Todo listo para jugar, reservar y pasarla bien.
           </h2>
 
+
+
+
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {[
-              ["🎱", "Mesas de billar", "Espacios cómodos para juego casual o competitivo."],
-              ["🏆", "Torneos", "Organización de competencias y eventos especiales."],
-              ["👥", "Grupos", "Ideal para convivios, cumpleaños y reuniones."],
-              ["📲", "WhatsApp", "Reservas rápidas y atención directa."],
-            ].map(([icon, title, text]) => (
-              <div
-                key={title}
-                className="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-xl"
-              >
-                <div className="text-4xl">{icon}</div>
-                <h3 className="mt-5 text-2xl font-bold">{title}</h3>
-                <p className="mt-3 leading-7 text-white/70">{text}</p>
-              </div>
-            ))}
-          </div>
+  {[
+    {
+      icon: "/Icon/mesa-de-billar.png",
+      title: "Mesas de billar",
+      text: "Espacios cómodos para juego casual o competitivo.",
+    },
+    {
+      icon: "/Icon/de-billar.png",
+      title: "Torneos",
+      text: "Organización de competencias y eventos especiales.",
+    },
+    {
+      icon: "/Icon/companero-de-equipo.png",
+      title: "Grupos",
+      text: "Ideal para convivios, cumpleaños y reuniones.",
+    },
+    {
+      icon: "/Icon/whatsapp.png",
+      title: "WhatsApp",
+      text: "Reservas rápidas y atención directa.",
+    },
+  ].map((item) => (
+    <div
+      key={item.title}
+      className="rounded-3xl border border-white/10 bg-white/5 p-7 shadow-xl"
+    >
+      <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10">
+        <img
+          src={item.icon}
+          alt={item.title}
+          className="h-12 w-12 object-contain"
+        />
+      </div>
+
+      <h3 className="mt-5 text-2xl font-bold">{item.title}</h3>
+
+      <p className="mt-3 leading-7 text-white/70">
+        {item.text}
+      </p>
+    </div>
+  ))}
+</div>
         </div>
+
+
+
       </section>
 
       <section className="bg-[#f7f6ef] px-6 py-24 text-[#263626]">

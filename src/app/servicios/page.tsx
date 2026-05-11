@@ -5,7 +5,7 @@ export default function Servicios() {
       precio: "Desde $5",
       imagen: "/img/F_2.png",
       descripcion:
-        "Disfruta partidas casuales o competitivas en un ambiente elegante, cómodo y con buena atención.",
+        "Disfruta partidas casuales o competitivas en un ambiente cómodo y con buena atención.",
       detalles: ["Mesas cuidadas", "Ambiente cómodo", "Ideal para amigos"],
     },
     {
@@ -14,7 +14,11 @@ export default function Servicios() {
       imagen: "/img/E_1.png",
       descripcion:
         "Reserva espacios para cumpleaños, convivios, reuniones especiales o celebraciones privadas.",
-      detalles: ["Grupos pequeños", "Atención personalizada", "Reservas por WhatsApp"],
+      detalles: [
+        "Grupos pequeños",
+        "Atención personalizada",
+        "Reservas por WhatsApp",
+      ],
     },
     {
       titulo: "Torneos",
@@ -42,7 +46,7 @@ export default function Servicios() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-white/75">
-            En Billar El Doblete ofrecemos un espacio premium para disfrutar el
+            En Billar El Doblete ofrecemos un espacio agradable para disfrutar el
             billar con amigos, organizar eventos y vivir noches diferentes.
           </p>
         </div>
@@ -60,6 +64,7 @@ export default function Servicios() {
                 style={{ backgroundImage: `url(${servicio.imagen})` }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent" />
+
                 <p className="absolute bottom-5 left-5 rounded-full bg-[#78964c] px-4 py-2 text-sm font-bold text-white">
                   {servicio.precio}
                 </p>
@@ -67,13 +72,17 @@ export default function Servicios() {
 
               <div className="p-7">
                 <h2 className="text-2xl font-black">{servicio.titulo}</h2>
+
                 <p className="mt-4 leading-7 text-[#657065]">
                   {servicio.descripcion}
                 </p>
 
                 <div className="mt-6 space-y-3">
                   {servicio.detalles.map((detalle) => (
-                    <p key={detalle} className="flex items-center gap-3 text-sm">
+                    <p
+                      key={detalle}
+                      className="flex items-center gap-3 text-sm"
+                    >
                       <span className="h-2 w-2 rounded-full bg-[#78964c]" />
                       {detalle}
                     </p>
@@ -96,9 +105,11 @@ export default function Servicios() {
             <p className="text-sm font-bold uppercase tracking-[0.35em] text-[#c8d9a1]">
               Reservas
             </p>
+
             <h2 className="mt-4 text-4xl font-black">
               ¿Quieres reservar una mesa o evento?
             </h2>
+
             <p className="mt-5 leading-8 text-white/75">
               Escríbenos por WhatsApp para consultar disponibilidad, horarios,
               precios especiales o reservar para grupos.
